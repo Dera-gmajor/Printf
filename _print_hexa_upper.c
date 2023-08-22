@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * hexadecimal_2 - prints uppercase hexadecimal
+ * _print_hexa_upper - prints uppercase hexadecimal
  * @n: pointer to the numbers
  * @dx: va_list containing arguments
  * Return: counts of character printed
  */
-int hexadecimal_2(int *n, va_list dx)
+int _print_hexa_upper(int *n, va_list dx)
 {
 	char m[32];
 	unsigned int r = va_arg(dx, unsigned int);

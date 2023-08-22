@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * e - function that returns the index of the special char
  * @p: char
@@ -8,15 +7,16 @@
  */
 int e(char p, struct tag *q)
 {
-    int a = 0;
+	int a = 0;
 
-    while ((q + a)->g != '\0')
-    {
-        if (p == (q + a)->g)
-            return (a);
-        a++;
-    }
-    return (-1);
+	while ((q + a)->g != '\0')
+	{
+
+		if (p == (q + a)->g)
+			return (a);
+		a++;
+	}
+	return (-1);
 }
 
 /**
@@ -27,13 +27,13 @@ int e(char p, struct tag *q)
  */
 int d(char p, struct tmp *q)
 {
-    int a = 0;
+	int a = 0;
 
-    while ((q + a)->g != '\0')
-    {
-        if (p == (q + a)->g)
-            return (a);
-        a++;
-    }
-    return (-1);
+	while ((q + a)->g != '\0')
+	{
+		if (p == (q + a)->g)
+			return (a);
+		a++;
+	}
+	return (-1);
 }

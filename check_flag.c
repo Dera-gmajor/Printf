@@ -34,7 +34,7 @@ void space_sn(int a, char c, int *sn)
  * window_sn - prints windows sign
  * @a: sign
  * @c: char
- * @sn: string count 
+ * @sn: string count
  */
 void window_sn(int a, char c, int *sn)
 {
@@ -74,7 +74,7 @@ void window_sn(int a, char c, int *sn)
 /**
  * postive_sn - prints positive sign
  * @a: sign
- * @ch: char
+ * @c: char
  * @sn: string count
  */
 
