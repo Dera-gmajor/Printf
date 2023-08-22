@@ -10,7 +10,11 @@ int _printf(const char *format, ...)
 	int g, f = 0;
 	int *sn = &g;
 	tag t[] = {
-		{'i', print_int}, {'c', print_char}, {'u', print_unsigned}, {'p', print_pointer}, {'s', print_strings}, {'d', print_int}, {'r', print_reverse}, {'b', print_binary}, {'x', print_hexa_lower}, {'o', print_octal}, {'R', print_rot13}, {'S', print_non_printable}, {'X', print_hexa_upper}, {'\0', NULL}
+		{'i', print_int}, {'c', print_char}, {'u', print_unsigned},
+		{'p', print_pointer}, {'s', print_strings}, {'d', print_int},
+		{'r', print_reverse}, {'b', print_binary}, {'x', print_hexa_lower},
+		{'o', print_octal}, {'R', print_rot13}, {'S', print_non_printable},
+		{'X', print_hexa_upper}, {'\0', NULL}
 	};
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
