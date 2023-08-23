@@ -31,7 +31,7 @@ int _printf(const char *format, ...)
 		else if (format[v] == '%' && format[v + 1] != '%')
 		{
 			v++;
-			tag_tr(format, &v, x, sn, t);
+			tag_tr(format, &v, x, sn, y);
 		}
 		else if (format[v] == '%' && format[v + 1])
 		{
@@ -52,7 +52,7 @@ int _printf(const char *format, ...)
  * @sn: pointer to counter
  * @t: pointer to arguements
  */
-void tag_t(const char *format, int *a, struct tag *q, int *sn, va_list t)
+void tag_tr(const char *format, int *a, struct tag *q, int *sn, va_list t)
 {
 	va_list u;
 	int m, n = 3;
