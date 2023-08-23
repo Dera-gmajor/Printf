@@ -5,23 +5,24 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
+
 /**
- * struct tag - struct to use
- * @g: ..
- * @tg: pointer
+ * struct tag - Structure to represent a tag and its handler function
+ * @g: The tag character
+ * @tg: Pointer to the handler function
  */
-typedef struct tag_t;
+typedef struct tag_t
 {
 	char g;
 	int (*tg)(va_list, int *);
 } tag;
 
 /**
- * struct tmp - struct to use
- * @g: ...
- * @tg: pointer
+ * struct tmp - Structure to represent temporary data
+ * @g: The temporary character
+ * @tg: Pointer to the handler function
  */
-typedef struct tmp_t;
+typedef struct tmp_t
 {
 	char g;
 	void (*tg)(int, char, int, va_list, int *);
@@ -44,4 +45,4 @@ int _print_pointer(va_list t, int *sn);
 int _print_hex(unsigned long int ab, int *sn);
 int upper_hexa(int n, int *sn);
 int _print_non_printable(va_list t, int *sn);
-
+#endif
