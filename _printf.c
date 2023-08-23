@@ -58,7 +58,7 @@ void tag_t(const char *format, int *a, struct tag *q, int *sn, va_list t)
 	int m, n = 3;
 	int b = *a;
 	int h = 0;
-	sign s[] = {{'+'}, {' '}, {'#'}, {'\0'}};
+	tmp s[] = {{'+'}, {' '}, {'#'}, {'\0'}};
 
 	va_copy(u, t);
 
