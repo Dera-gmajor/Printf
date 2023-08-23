@@ -9,7 +9,7 @@ int _printf(const char *format, ...)
 	int v, w = 0;
 	va_list t;
 	int *sn = &w;
-	tag t[] = {
+	tag y[] = {
 		{'i', print_int}, {'c', print_char}, {'u', print_unsigned},
 		{'p', print_pointer}, {'s', print_strings}, {'d', print_int},
 		{'r', print_reverse}, {'b', print_binary}, {'x', print_hexa_lower},
@@ -31,7 +31,7 @@ int _printf(const char *format, ...)
 		else if (format[v] == '%' && format[v + 1] != '%')
 		{
 			v++;
-			tag_t(format, &v, x, sn, t);
+			tag_tr(format, &v, x, sn, t);
 		}
 		else if (format[v] == '%' && format[v + 1])
 		{
@@ -45,7 +45,7 @@ int _printf(const char *format, ...)
 }
 
 /**
- * tag_t - checks for sign
+ * tag_tr - checks for sign
  * @format: string format
  * @a: pointer to format
  * @q: pointer to struct
