@@ -5,9 +5,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
-
 /**
- * struct tag - Structure to represent a tag and its handler function
+ * struct tag_t - Structure to represent a tag and its handler function
  * @g: The tag character
  * @tg: Pointer to the handler function
  */
@@ -18,7 +17,7 @@ typedef struct tag_t
 } tag;
 
 /**
- * struct tmp - Structure to represent temporary data
+ * struct tmp_t - Structure to represent temporary data
  * @g: The temporary character
  * @tg: Pointer to the handler function
  */
