@@ -9,13 +9,13 @@ int _print_reverse(va_list t, int *sn)
 {
 	int b;
 	char *s = va_arg(t, char *);
+	int length = stringlength(s);
 
 	if (s == NULL)
 	{
 		return (-1);
 	}
 
-	int length = stringlength(s);
 	char *end = s + length - 1;
 
 	while (end >= s)
