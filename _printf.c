@@ -87,7 +87,7 @@ void tag_tr(const char *format, int *a, struct tag_t *q, int *sn, va_list t)
 	if (m != -1)
 	{
 		if (s[n].g != '\0')
-			s[n].tg(h, s[n].g, m, u, sn);
+			s[n].tg(h, s[n].g, &m, u, *sn);
 		q[m].tg(t, sn);
 		*a = b;
 	}
