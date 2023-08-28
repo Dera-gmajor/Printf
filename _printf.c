@@ -10,11 +10,11 @@ int _printf(const char *format, ...)
 	va_list t;
 	int *sn = &w;
 	tag y[] = {
-		{'i', print_int}, {'c', print_char}, {'u', print_unsigned},
-		{'p', print_pointer}, {'s', print_strings}, {'d', print_int},
-		{'r', print_reverse}, {'b', print_binary}, {'x', print_hexa_lower},
-		{'o', print_octal}, {'R', print_rot13}, {'S', print_non_printable},
-		{'X', print_hexa_upper}, {'\0', NULL}
+		{'i', _print_integer}, {'c', _print_char}, {'u',  _print_unsignedint},
+		{'p', _print_pointer}, {'s', _print_strings}, {'d', _print_int},
+		{'r', _print_reverse}, {'b', _print_binary}, {'x', _print_hexa_lower},
+		{'o', _print_octal}, {'R', _print_rot13}, {'S', _print_non_printable},
+		{'X', _print_hexa_upper}, {'\0', NULL}
 	};
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
@@ -52,7 +52,7 @@ int _printf(const char *format, ...)
  * @sn: pointer to counter
  * @t: pointer to arguements
  */
-void tag_tr(const char *format, int *a, struct tag *q, int *sn, va_list t)
+void tag_tr(const char *format, int *a, struct tag_t *q, int *sn, va_list t)
 {
 	va_list u;
 	int m, n = 3;
