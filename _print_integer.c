@@ -8,6 +8,8 @@
 int _print_integer(va_list t, int *sn)
 {
 	unsigned int n = va_arg(t, int);
+
 	_integer(n, sn);
+
 	return (0);
 }

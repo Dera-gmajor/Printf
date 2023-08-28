@@ -7,5 +7,5 @@
  */
 int strings(char *s, int l)
 {
-	return write(1, s, l);
+	return (write(1, s, l));
 }
