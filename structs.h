@@ -3,7 +3,7 @@
 typedef struct tag_t
 {
 	char g;
-	int (*tg)(va_list, int *)
+	int (*tg)(va_list, int *);
 } tag;
 
 typedef struct tmp_t
