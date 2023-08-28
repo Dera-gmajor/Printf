@@ -23,7 +23,7 @@ void space_sn(int s, char c, int *sn, va_list u, int b)
 		_putchar('+');
 		*sn += 1;
 	}
-	else if (a == 2 && !(b == 2 || b == 3 || b == 12))
+	else if (s == 2 && !(b == 2 || b == 3 || b == 12))
 	{
 		window_sn(s, '#', sn, u, b);
 	}
