@@ -58,7 +58,12 @@ void tag_tr(const char *format, int *a, struct tag_t *q, int *sn, va_list t)
 	int m, n = 3;
 	int b = *a;
 	int h = 0;
-	tmp s[] = {{'+'}, {' '}, {'#'}, {'\0'}};
+	tmp s[] = {
+		{'+', postive_sn},
+		{' ', space_sn},
+		{'#', window_sn},
+		{'\0', NULL}
+	};
 
 	va_copy(u, t);
 
