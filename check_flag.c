@@ -4,13 +4,12 @@
  * @a: sign
  * @c: char
  * @sn: string count
+ * @u: va_list
+ * @b: value
  */
 
-void space_sn(int a, char c, int *sn)
+void space_sn(int a, char c, int *sn, va_list u, int b)
 {
-	int b;
-	va_list u;
-
 	if ((c == ' ' && (b == 2 || b == 3 || b == 12)) && a == 0)
 	{
 		if (va_arg(u, int) >= 0 || b == 12)
@@ -35,12 +34,11 @@ void space_sn(int a, char c, int *sn)
  * @a: sign
  * @c: char
  * @sn: string count
+ * @u: va_list
+ * @b: value
  */
-void window_sn(int a, char c, int *sn)
+void window_sn(int a, char c, int *sn, va_list u, int b)
 {
-	int b;
-	va_list u;
-
 	if (va_arg(u, int) != 0)
 	{
 		if (a > 1 && !(b == 2 || b == 3 || b == 12))
@@ -76,13 +74,12 @@ void window_sn(int a, char c, int *sn)
  * @a: sign
  * @c: char
  * @sn: string count
+ * @u: va_list
+ * @b: value
  */
 
-void postive_sn(int a, char c, int *sn)
+void postive_sn(int a, char c, int *sn, va_list u, int b)
 {
-	int b;
-	va_list u;
-
 	if (a < 2 || (b == 2 || b == 3 || b == 12))
 	{
 		if (c == '+' && (b == 2 || b == 3 || b == 12))
