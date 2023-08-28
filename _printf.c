@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 	int *sn = &w;
 	tag y[] = {
 		{'i', _print_integer}, {'c', _print_char}, {'u',  _print_unsignedint},
-		{'p', _print_pointer}, {'s', _print_strings}, {'d', _print_int},
+		{'p', _print_pointer}, {'s', _print_strings}, {'d', _print_integer},
 		{'r', _print_reverse}, {'b', _print_binary}, {'x', _print_hexa_lower},
 		{'o', _print_octal}, {'R', _print_rot13}, {'S', _print_non_printable},
 		{'X', _print_hexa_upper}, {'\0', NULL}
