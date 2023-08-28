@@ -31,7 +31,7 @@ int _printf(const char *format, ...)
 		else if (format[v] == '%' && format[v + 1] != '%')
 		{
 			v++;
-			tag_tr(format, &v, x, sn, y);
+			tag_tr(format, &v, y, sn, t);
 		}
 		else if (format[v] == '%' && format[v + 1])
 		{
