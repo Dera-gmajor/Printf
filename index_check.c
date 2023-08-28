@@ -5,7 +5,7 @@
  * @q: pointer to array of tag
  * Return: index, otherwise NULL
  */
-int e(char p, struct tag *q)
+int e(char p, struct tag_t *q)
 {
 	int a = 0;
 
@@ -25,7 +25,7 @@ int e(char p, struct tag *q)
  * @q: pointer to array of struct tmp
  * Return: index, otherwise NULL
  */
-int d(char p, struct tmp *q)
+int d(char p, struct tmp_t *q)
 {
 	int a = 0;
 
