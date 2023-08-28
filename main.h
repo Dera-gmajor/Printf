@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
-#include "structs.h"
 /**
  * struct tag_t - Structure to represent a tag and its handler function
  * @g: The tag character
