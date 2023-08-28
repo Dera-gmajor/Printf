@@ -30,6 +30,7 @@ typedef struct tmp_t
 int _printf(const char *format, ...);
 int stringlength(char *str);
 int _putchar(char put);
+void tag_tr(const char *format, int *a, struct tag_t *q, int *sn, va_list t);
 int _print_hexa_upper(int *n, va_list dx);
 void space_sn(int a, char c, int *sn, va_list u, int b);
 void window_sn(int a, char c, int *sn, va_list u, int b);
@@ -44,4 +45,11 @@ int _print_pointer(va_list t, int *sn);
 int _print_hex(unsigned long int ab, int *sn);
 int upper_hexa(int n, int *sn);
 int _print_non_printable(va_list t, int *sn);
+int _print_binary(va_list t, __attribute__((unused)) int *sn);
+int _print_hexa_lower(va_list t, int *sn);
+int _print_octal(va_list t, int *sn);
+int _print_reverse(va_list t, int *sn);
+int _print_rot13(va_list t, int *sn);
+int _print_unsignedint(va_list t, int *sn);
+int _print_integer(va_list t, int *sn);
 #endif
