@@ -25,7 +25,7 @@ void space_sn(int a, char c, int *sn, va_list u, int b)
 	}
 	else if (a == 2 && !(b == 2 || b == 3 || b == 12))
 	{
-		window_sn(a, '#', b, u, sn);
+		window_sn(a, '#', sn, u, b);
 	}
 }
 
@@ -93,6 +93,6 @@ void postive_sn(int a, char c, int *sn, va_list u, int b)
 	}
 	else
 	{
-		window_sn(a, '#', b, u, sn);
+		window_sn(a, '#', sn, u, b);
 	}
 }
