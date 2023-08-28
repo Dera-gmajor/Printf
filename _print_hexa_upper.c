@@ -1,14 +1,14 @@
 #include "main.h"
 /**
  * _print_hexa_upper - prints uppercase hexadecimal
- * @n: pointer to the numbers
- * @dx: va_list containing arguments
+ * @sn: pointer to the numbers
+ * @t: va_list containing arguments
  * Return: counts of character printed
  */
-int _print_hexa_upper(int *n, va_list dx)
+int _print_hexa_upper(int *sn, va_list t)
 {
 	char m[32];
-	unsigned int r = va_arg(dx, unsigned int);
+	unsigned int r = va_arg(t, unsigned int);
 	int q = 0;
 	int p = 0;
 	char hd[] = "0123456789ABCDEF";
@@ -16,7 +16,7 @@ int _print_hexa_upper(int *n, va_list dx)
 	if (r == 0)
 	{
 		putchar('0');
-		(*n)++;
+		(*sn)++;
 		return (1);
 	}
 	while (r > 0)
@@ -30,7 +30,7 @@ int _print_hexa_upper(int *n, va_list dx)
 	{
 		putchar(m[q]);
 		q--;
-		(*n)++;
+		(*sn)++;
 		p++;
 	}
 	return (p);

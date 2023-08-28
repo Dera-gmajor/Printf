@@ -31,7 +31,7 @@ int _printf(const char *format, ...);
 int stringlength(char *str);
 int _putchar(char put);
 void tag_tr(const char *format, int *a, struct tag_t *q, int *sn, va_list t);
-int _print_hexa_upper(int *n, va_list dx);
+int _print_hexa_upper(int *sn, va_list t);
 void space_sn(int a, char c, int *sn, va_list u, int b);
 void window_sn(int a, char c, int *sn, va_list u, int b);
 void postive_sn(int a, char c, int *sn, va_list u, int b);
