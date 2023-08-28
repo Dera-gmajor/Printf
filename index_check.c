@@ -20,7 +20,7 @@ int e(char p, struct tag_t *q)
 }
 
 /**
- * d - funcstion that returns the index of the flag
+ * d - funcstion that returns the index of the s
  * @p: char
  * @q: pointer to array of struct tmp
  * Return: index, otherwise NULL

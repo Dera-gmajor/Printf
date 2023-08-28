@@ -1,16 +1,16 @@
 #include "main.h"
 /**
  * space_sn - prints space sign
- * @a: sign
+ * @s: sign
  * @c: char
  * @sn: string count
  * @u: va_list
  * @b: value
  */
 
-void space_sn(int a, char c, int *sn, va_list u, int b)
+void space_sn(int s, char c, int *sn, va_list u, int b)
 {
-	if ((c == ' ' && (b == 2 || b == 3 || b == 12)) && a == 0)
+	if ((c == ' ' && (b == 2 || b == 3 || b == 12)) && s == 0)
 	{
 		if (va_arg(u, int) >= 0 || b == 12)
 		{
@@ -18,30 +18,30 @@ void space_sn(int a, char c, int *sn, va_list u, int b)
 			*sn += 1;
 		}
 	}
-	else if (a <= 2 && (b == 2 || b == 3 || b == 12))
+	else if (s <= 2 && (b == 2 || b == 3 || b == 12))
 	{
 		_putchar('+');
 		*sn += 1;
 	}
 	else if (a == 2 && !(b == 2 || b == 3 || b == 12))
 	{
-		window_sn(a, '#', sn, u, b);
+		window_sn(s, '#', sn, u, b);
 	}
 }
 
 /**
  * window_sn - prints windows sign
- * @a: sign
+ * @s: sign
  * @c: char
  * @sn: string count
  * @u: va_list
  * @b: value
  */
-void window_sn(int a, char c, int *sn, va_list u, int b)
+void window_sn(int s, char c, int *sn, va_list u, int b)
 {
 	if (va_arg(u, int) != 0)
 	{
-		if (a > 1 && !(b == 2 || b == 3 || b == 12))
+		if (s > 1 && !(b == 2 || b == 3 || b == 12))
 		{
 			if (c == '#' && b == 7)
 			{
@@ -61,7 +61,7 @@ void window_sn(int a, char c, int *sn, va_list u, int b)
 				*sn += 2;
 			}
 		}
-		else if (a < 2 && (b == 2 || b == 3 || b == 12))
+		else if (s < 2 && (b == 2 || b == 3 || b == 12))
 		{
 			_putchar('+');
 			*sn += 1;
@@ -71,16 +71,16 @@ void window_sn(int a, char c, int *sn, va_list u, int b)
 
 /**
  * postive_sn - prints positive sign
- * @a: sign
+ * @s: sign
  * @c: char
  * @sn: string count
  * @u: va_list
  * @b: value
  */
 
-void postive_sn(int a, char c, int *sn, va_list u, int b)
+void postive_sn(int s, char c, int *sn, va_list u, int b)
 {
-	if (a < 2 || (b == 2 || b == 3 || b == 12))
+	if (s < 2 || (b == 2 || b == 3 || b == 12))
 	{
 		if (c == '+' && (b == 2 || b == 3 || b == 12))
 		{
@@ -93,6 +93,6 @@ void postive_sn(int a, char c, int *sn, va_list u, int b)
 	}
 	else
 	{
-		window_sn(a, '#', sn, u, b);
+		window_sn(s, '#', sn, u, b);
 	}
 }
