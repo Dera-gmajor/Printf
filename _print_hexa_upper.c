@@ -5,7 +5,7 @@
  * @t: va_list containing arguments
  * Return: counts of character printed
  */
-int _print_hexa_upper(va_list t, int *sn);
+int _print_hexa_upper(va_list t, int *sn)
 {
 	char m[32];
 	unsigned int r = va_arg(t, unsigned int);
