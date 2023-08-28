@@ -13,7 +13,7 @@ int _print_strings(va_list t, int *sn)
 	if (s == NULL)
 		s = "(null)";
 
-	if (_putstr(s, stringlength(s)) != -1)
+	if (strings(s, stringlength(s)) != -1)
 		*sn += stringlength(s);
 	else
 		return (-1);
