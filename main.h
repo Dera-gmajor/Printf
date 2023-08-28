@@ -24,7 +24,7 @@ typedef struct tag_t
 typedef struct tmp_t
 {
 	char g;
-	void (*tg)(int, char, int, va_list, int *);
+	void (*tg)(int, char, int *, va_list, int);
 } tmp;
 
 int _printf(const char *format, ...);
